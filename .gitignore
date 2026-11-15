@@ -1,0 +1,9 @@
+# Large data files are hosted on HuggingFace (see README "Get the data files")
+Cleaned_Master_CSV_v3.csv
+hetero_graphs/Graph_A.pt
+frozen_split_GraphA_seed42.pt
+manufacturer_image_release_asset.pt
+
+__pycache__/
+.venv/
+vlm_experiment/images/

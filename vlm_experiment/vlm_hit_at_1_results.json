@@ -1,0 +1,43 @@
+{
+ "note": "post-hoc metric, computed after R5/R10 test results were seen; zero rerun -- re-parses already-saved raw model output text. PRIMARY scores zero-valid-response manufacturers as misses (full 605-pop, consistent denominator across conditions); SECONDARY excludes them (matched subset) -- listed for transparency, not primary.",
+ "primary_full_population": {
+  "n": 605,
+  "hit1_text": 0.4909090909090909,
+  "hit1_text_image": 0.20826446280991737,
+  "paired_diff_mean": -0.28264462809917357,
+  "paired_diff_std": 0.5125377850633239,
+  "bootstrap_95ci": {
+   "hit1_text": [
+    0.45289256198347105,
+    0.5305785123966942
+   ],
+   "hit1_text_image": [
+    0.17681818181818182,
+    0.24297520661157024
+   ],
+   "d_hit1": [
+    -0.3239669421487603,
+    -0.24297520661157024
+   ]
+  }
+ },
+ "secondary_matched_subset_excluding_zero_valid": {
+  "n": 586,
+  "hit1_text": 0.48976109215017066,
+  "hit1_text_image": 0.2150170648464164,
+  "bootstrap_95ci": {
+   "hit1_text": [
+    0.447098976109215,
+    0.5307167235494881
+   ],
+   "hit1_text_image": [
+    0.1825938566552901,
+    0.24914675767918087
+   ],
+   "d_hit1": [
+    -0.3174488054607508,
+    -0.23378839590443687
+   ]
+  }
+ }
+}

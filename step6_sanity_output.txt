@@ -1,0 +1,35 @@
+
+=== seed=42 condition=text_only ===
+    seed=42 lr=1.0e-04  val_Recall@10=0.5278  stop_epoch=325
+    seed=42 lr=5.0e-04  val_Recall@10=0.4336  stop_epoch=27
+    seed=42 lr=1.0e-03  val_Recall@10=0.6897  stop_epoch=237
+    seed=42 lr=5.0e-03  val_Recall@10=0.6925  stop_epoch=119
+    seed=42 lr=1.0e-02  val_Recall@10=0.7078  stop_epoch=119
+  selected lr=0.01  val_Recall@10=0.7078
+  [all] Recall@5=0.5235 Recall@10=0.7168
+  [has_image] Recall@5=0.5220 Recall@10=0.7175
+  [no_image] Recall@5=0.5249 Recall@10=0.7160
+
+=== seed=42 condition=real_image ===
+    seed=42 lr=1.0e-04  val_Recall@10=0.3611  stop_epoch=58
+    seed=42 lr=5.0e-04  val_Recall@10=0.4410  stop_epoch=26
+    seed=42 lr=1.0e-03  val_Recall@10=0.4629  stop_epoch=21
+    seed=42 lr=5.0e-03  val_Recall@10=0.5470  stop_epoch=17
+    seed=42 lr=1.0e-02  val_Recall@10=0.6679  stop_epoch=117
+  selected lr=0.01  val_Recall@10=0.6679
+  [all] Recall@5=0.4717 Recall@10=0.6788
+  [has_image] Recall@5=0.4715 Recall@10=0.6786
+  [no_image] Recall@5=0.4719 Recall@10=0.6789
+
+=== seed=42 condition=zeroed_image ===
+    seed=42 lr=1.0e-04  val_Recall@10=0.4007  stop_epoch=62
+    seed=42 lr=5.0e-04  val_Recall@10=0.4690  stop_epoch=27
+    seed=42 lr=1.0e-03  val_Recall@10=0.4952  stop_epoch=21
+    seed=42 lr=5.0e-03  val_Recall@10=0.5491  stop_epoch=17
+    seed=42 lr=1.0e-02  val_Recall@10=0.7047  stop_epoch=208
+  selected lr=0.01  val_Recall@10=0.7047
+  [all] Recall@5=0.5218 Recall@10=0.7088
+  [has_image] Recall@5=0.5193 Recall@10=0.7134
+  [no_image] Recall@5=0.5243 Recall@10=0.7040
+
+SANITY CHECK PASSED (ran end to end for seed=42, all 3 conditions).

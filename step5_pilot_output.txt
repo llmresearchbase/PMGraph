@@ -1,0 +1,38 @@
+
+=== frequency baseline (train-set popularity, non-personalized) ===
+  [all] n_test_manufacturers=1200  Recall@5=0.4799  Recall@10=0.6766
+
+=== condition: baseline_no_image ===
+    lr=1.0e-04  val_Recall@10=0.6463  stop_epoch=266
+    lr=5.0e-04  val_Recall@10=0.6981  stop_epoch=199
+    lr=1.0e-03  val_Recall@10=0.6913  stop_epoch=118
+    lr=5.0e-03  val_Recall@10=0.6962  stop_epoch=115
+    lr=1.0e-02  val_Recall@10=0.7103  stop_epoch=148
+  selected lr=1.0e-02  val_Recall@10=0.7103
+  [all] n_test_manufacturers=1200  Recall@5=0.5169  Recall@10=0.7128
+  [has_image] n_test_manufacturers=605  Recall@5=0.5211  Recall@10=0.7144
+  [no_image] n_test_manufacturers=595  Recall@5=0.5126  Recall@10=0.7112
+
+=== condition: real ===
+    lr=1.0e-04  val_Recall@10=0.6726  stop_epoch=266
+    lr=5.0e-04  val_Recall@10=0.6955  stop_epoch=113
+    lr=1.0e-03  val_Recall@10=0.6941  stop_epoch=85
+    lr=5.0e-03  val_Recall@10=0.7115  stop_epoch=80
+    lr=1.0e-02  val_Recall@10=0.7181  stop_epoch=80
+  selected lr=1.0e-02  val_Recall@10=0.7181
+  [all] n_test_manufacturers=1200  Recall@5=0.5116  Recall@10=0.7201
+  [has_image] n_test_manufacturers=605  Recall@5=0.5161  Recall@10=0.7209
+  [no_image] n_test_manufacturers=595  Recall@5=0.5070  Recall@10=0.7193
+
+=== condition: zeroed ===
+    lr=1.0e-04  val_Recall@10=0.6782  stop_epoch=302
+    lr=5.0e-04  val_Recall@10=0.6791  stop_epoch=86
+    lr=1.0e-03  val_Recall@10=0.6943  stop_epoch=86
+    lr=5.0e-03  val_Recall@10=0.7041  stop_epoch=50
+    lr=1.0e-02  val_Recall@10=0.7101  stop_epoch=49
+  selected lr=1.0e-02  val_Recall@10=0.7101
+  [all] n_test_manufacturers=1200  Recall@5=0.5064  Recall@10=0.7167
+  [has_image] n_test_manufacturers=605  Recall@5=0.5078  Recall@10=0.7169
+  [no_image] n_test_manufacturers=595  Recall@5=0.5049  Recall@10=0.7165
+
+wrote material_recovery_results.md

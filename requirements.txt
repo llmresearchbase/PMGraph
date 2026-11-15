@@ -1,0 +1,11 @@
+torch==2.5.1
+torch-geometric==2.8.0.post1
+scikit-learn==1.9.1
+pandas==3.0.6
+numpy==2.5.3
+
+# transformers is only needed if you re-embed images yourself from scratch
+# (e.g. build_manufacturer_image_embeddings.py, not part of this release
+# package since raw images are not redistributed -- see README.md and
+# paper Section 6). Not required to run any script in this package.
+# transformers==4.46.3

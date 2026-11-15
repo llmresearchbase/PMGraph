@@ -1,0 +1,75 @@
+
+=== seed=42 condition=mlp_real_image ===
+    seed=42 lr=1.0e-04  val_Recall@10=0.6990  stop_epoch=500
+    seed=42 lr=5.0e-04  val_Recall@10=0.7136  stop_epoch=163
+    seed=42 lr=1.0e-03  val_Recall@10=0.7173  stop_epoch=125
+    seed=42 lr=5.0e-03  val_Recall@10=0.7242  stop_epoch=87
+    seed=42 lr=1.0e-02  val_Recall@10=0.7267  stop_epoch=101
+  selected lr=1.0e-02  val_Recall@10=0.7267
+  [all] Recall@5=0.5389 Recall@10=0.7273
+  [has_image] Recall@5=0.5463 Recall@10=0.7299
+  [no_image] Recall@5=0.5314 Recall@10=0.7248
+
+=== seed=42 condition=mlp_zeroed_image ===
+    seed=42 lr=1.0e-04  val_Recall@10=0.6936  stop_epoch=468
+    seed=42 lr=5.0e-04  val_Recall@10=0.7132  stop_epoch=182
+    seed=42 lr=1.0e-03  val_Recall@10=0.7176  stop_epoch=175
+    seed=42 lr=5.0e-03  val_Recall@10=0.7262  stop_epoch=107
+    seed=42 lr=1.0e-02  val_Recall@10=0.7240  stop_epoch=108
+  selected lr=5.0e-03  val_Recall@10=0.7262
+  [all] Recall@5=0.5370 Recall@10=0.7300
+  [has_image] Recall@5=0.5295 Recall@10=0.7268
+  [no_image] Recall@5=0.5446 Recall@10=0.7333
+
+=== seed=43 condition=mlp_real_image ===
+    seed=43 lr=1.0e-04  val_Recall@10=0.7086  stop_epoch=500
+    seed=43 lr=5.0e-04  val_Recall@10=0.7221  stop_epoch=182
+    seed=43 lr=1.0e-03  val_Recall@10=0.7159  stop_epoch=75
+    seed=43 lr=5.0e-03  val_Recall@10=0.7320  stop_epoch=102
+    seed=43 lr=1.0e-02  val_Recall@10=0.7307  stop_epoch=95
+  selected lr=5.0e-03  val_Recall@10=0.7320
+  [all] Recall@5=0.5496 Recall@10=0.7338
+  [has_image] Recall@5=0.5509 Recall@10=0.7372
+  [no_image] Recall@5=0.5483 Recall@10=0.7303
+
+=== seed=43 condition=mlp_zeroed_image ===
+    seed=43 lr=1.0e-04  val_Recall@10=0.7009  stop_epoch=427
+    seed=43 lr=5.0e-04  val_Recall@10=0.7203  stop_epoch=240
+    seed=43 lr=1.0e-03  val_Recall@10=0.7211  stop_epoch=130
+    seed=43 lr=5.0e-03  val_Recall@10=0.7240  stop_epoch=74
+    seed=43 lr=1.0e-02  val_Recall@10=0.7249  stop_epoch=75
+  selected lr=1.0e-02  val_Recall@10=0.7249
+  [all] Recall@5=0.5353 Recall@10=0.7278
+  [has_image] Recall@5=0.5319 Recall@10=0.7237
+  [no_image] Recall@5=0.5388 Recall@10=0.7320
+
+=== seed=44 condition=mlp_real_image ===
+    seed=44 lr=1.0e-04  val_Recall@10=0.6967  stop_epoch=424
+    seed=44 lr=5.0e-04  val_Recall@10=0.7202  stop_epoch=202
+    seed=44 lr=1.0e-03  val_Recall@10=0.7247  stop_epoch=154
+    seed=44 lr=5.0e-03  val_Recall@10=0.7264  stop_epoch=56
+    seed=44 lr=1.0e-02  val_Recall@10=0.7309  stop_epoch=89
+  selected lr=1.0e-02  val_Recall@10=0.7309
+  [all] Recall@5=0.5391 Recall@10=0.7349
+  [has_image] Recall@5=0.5380 Recall@10=0.7346
+  [no_image] Recall@5=0.5403 Recall@10=0.7352
+
+=== seed=44 condition=mlp_zeroed_image ===
+    seed=44 lr=1.0e-04  val_Recall@10=0.6920  stop_epoch=388
+    seed=44 lr=5.0e-04  val_Recall@10=0.7172  stop_epoch=240
+    seed=44 lr=1.0e-03  val_Recall@10=0.7165  stop_epoch=136
+    seed=44 lr=5.0e-03  val_Recall@10=0.7240  stop_epoch=57
+    seed=44 lr=1.0e-02  val_Recall@10=0.7218  stop_epoch=58
+  selected lr=5.0e-03  val_Recall@10=0.7240
+  [all] Recall@5=0.5269 Recall@10=0.7270
+  [has_image] Recall@5=0.5241 Recall@10=0.7258
+  [no_image] Recall@5=0.5298 Recall@10=0.7282
+
+=== paired differences (per seed, has_image group) ===
+  seed=42  real-zeroed: dR5=+0.0168  dR10=+0.0031
+  seed=43  real-zeroed: dR5=+0.0191  dR10=+0.0135
+  seed=44  real-zeroed: dR5=+0.0139  dR10=+0.0088
+
+  mean+-std: dR5=+0.0166+-0.0026  dR10=+0.0085+-0.0052
+
+wrote material_recovery_mlp_image_baseline_results.md

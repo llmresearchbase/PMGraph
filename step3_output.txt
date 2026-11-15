@@ -1,0 +1,40 @@
+
+=== seed=42 condition=feature_mlp_no_graph ===
+    seed=42 lr=1.0e-04  val_Recall@10=0.6943  stop_epoch=466
+    seed=42 lr=5.0e-04  val_Recall@10=0.7183  stop_epoch=251
+    seed=42 lr=1.0e-03  val_Recall@10=0.7190  stop_epoch=152
+    seed=42 lr=5.0e-03  val_Recall@10=0.7206  stop_epoch=65
+    seed=42 lr=1.0e-02  val_Recall@10=0.7249  stop_epoch=93
+  selected lr=1.0e-02  val_Recall@10=0.7249
+  [all] Recall@5=0.5350 Recall@10=0.7314
+  [has_image] Recall@5=0.5369 Recall@10=0.7314
+  [no_image] Recall@5=0.5330 Recall@10=0.7314
+
+=== seed=43 condition=feature_mlp_no_graph ===
+    seed=43 lr=1.0e-04  val_Recall@10=0.6970  stop_epoch=427
+    seed=43 lr=5.0e-04  val_Recall@10=0.7163  stop_epoch=160
+    seed=43 lr=1.0e-03  val_Recall@10=0.7162  stop_epoch=114
+    seed=43 lr=5.0e-03  val_Recall@10=0.7197  stop_epoch=60
+    seed=43 lr=1.0e-02  val_Recall@10=0.7239  stop_epoch=95
+  selected lr=1.0e-02  val_Recall@10=0.7239
+  [all] Recall@5=0.5326 Recall@10=0.7289
+  [has_image] Recall@5=0.5299 Recall@10=0.7280
+  [no_image] Recall@5=0.5353 Recall@10=0.7298
+
+=== seed=44 condition=feature_mlp_no_graph ===
+    seed=44 lr=1.0e-04  val_Recall@10=0.6894  stop_epoch=404
+    seed=44 lr=5.0e-04  val_Recall@10=0.7214  stop_epoch=268
+    seed=44 lr=1.0e-03  val_Recall@10=0.7225  stop_epoch=189
+    seed=44 lr=5.0e-03  val_Recall@10=0.7253  stop_epoch=85
+    seed=44 lr=1.0e-02  val_Recall@10=0.7258  stop_epoch=72
+  selected lr=1.0e-02  val_Recall@10=0.7258
+  [all] Recall@5=0.5318 Recall@10=0.7315
+  [has_image] Recall@5=0.5309 Recall@10=0.7291
+  [no_image] Recall@5=0.5328 Recall@10=0.7339
+
+=== mean +- sample std (ddof=1) across 3 seeds ===
+  feature_mlp_no_graph [all]: Recall@5=0.5331+-0.0016  Recall@10=0.7306+-0.0014
+  feature_mlp_no_graph [has_image]: Recall@5=0.5326+-0.0038  Recall@10=0.7295+-0.0017
+  feature_mlp_no_graph [no_image]: Recall@5=0.5337+-0.0014  Recall@10=0.7317+-0.0021
+
+wrote material_recovery_mlp_baseline_results.md

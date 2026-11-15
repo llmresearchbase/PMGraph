@@ -1,0 +1,13 @@
+=== Check 1: weight-transplant architecture equivalence ===
+  max abs diff, 64-dim baseline vs 97-dim zero-padded model: 0.000e+00
+  PASS (< 1e-05): True
+
+=== Check 2: feat_real vs feat_zeroed differ ONLY in the image slice ===
+  text dims [0:64] max abs diff (must be 0):        0.000e+00
+  has_image flag dim [64] max abs diff (must be 0): 0.000e+00
+  image dims [65:97] max abs diff (expected > 0):   8.567e-01
+  manufacturers where image dims actually differ:   4484 / 8900
+  PASS (only image slice differs, flag/text identical): True
+
+wrote check3_round4_architecture_equivalence_results.md
+Overall: PASS

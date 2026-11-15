@@ -1,0 +1,25 @@
+stored edges:  112598
+rebuilt edges: 112598
+identical edge sets (same m2i/p2i ordering): True
+stored manufacturers: 8900  rebuilt: 8900
+stored products:      72789  rebuilt: 72789
+
+product cells: 112930 non-null, 0 whitespace-only (these correctly produce no edge -- not a parsing bug)
+
+directory rows on known free community/personal hosting platforms: 15 (0.107% of 14007 directory rows)
+of those, graph nodes (>=1 product, so they DO carry edges): 11
+
+Full list (small enough to list exhaustively, not sample):
+  'Howell Precision'                            | www.howellprecision.wordpress.com             | n_products=5 | NAICS=nan
+  'JJ Machine Inc.'                             | www.jjmachineinc.wordpress.com                | n_products=27 | NAICS=nan
+  'Plasticology (Based on the given URL)'       | www.plasticology.squarespace.com              | n_products=4 | NAICS=nan
+  'Dunlopcustoms'                               | www.dunlopcustoms.blogspot.com                | n_products=8 | NAICS=nan
+  'customdesignsbyjacquelyn.blogspot'           | www.customdesignsbyjacquelyn.blogspot.com     | n_products=10 | NAICS=All Other Miscellaneous Textile Product Mills
+  'regencymedicalr2008.blogspot'                | www.regencymedicalr2008.blogspot.com          | n_products=5 | NAICS=Pharmaceutical Preparation Manufacturing
+  'meridianmanor.blogspot'                      | www.meridianmanor.blogspot.com                | n_products=8 | NAICS=Manufactured Home (Mobile Home) Manufacturing
+  'brimleyskateboards.tumblr'                   | www.brimleyskateboards.tumblr.com             | n_products=5 | NAICS=Sporting and Athletic Goods Manufacturing
+  'krffinancialllc.weebly'                      | www.krffinancialllc.weebly.com                | n_products=6 | NAICS=Steel Investment Foundries
+  'softheartdesigns.weebly'                     | www.softheartdesigns.weebly.com               | n_products=13 | NAICS=Jewelry and Silverware Manufacturing
+  'apaa.wildapricot.org'                        | apaa.wildapricot.org                          | n_products=12 | NAICS=Office Supplies (except Paper) Manufacturing
+
+wrote audit_edge_fidelity_results.md

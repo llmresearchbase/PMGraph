@@ -1,0 +1,447 @@
+{
+ "seed": 999,
+ "sampled_manufacturers": [
+  "www.azbbqgrills.com",
+  "www.realswroughtiron.com",
+  "www.rpc-rabrenco.com",
+  "www.polyprocessing.com",
+  "www.nucoatinc.com",
+  "www.nolanandsonsnw.com",
+  "www.catalystproductgroup.com",
+  "www.hobsonmotzer.com",
+  "www.behlencf.com",
+  "www.daytool.com",
+  "www.chicagotube.com",
+  "www.fordatlantic.com",
+  "www.rennerusa.com",
+  "www.ampcotubes.com",
+  "www.fernco.com",
+  "www.lhthomson.com",
+  "www.ejcon.com",
+  "www.lmiaerospace.com",
+  "www.automationguarding.com",
+  "www.freudenbergmedical.com",
+  "www.aggressivetube.com",
+  "www.dipseal.com",
+  "www.omnimax.com",
+  "www.drilling.com",
+  "www.davismfg.com"
+ ],
+ "unresolvable_label": [],
+ "n_images_ok": 59,
+ "manifest": [
+  {
+   "manufacturer": "www.azbbqgrills.com",
+   "order": 0,
+   "file": "www.azbbqgrills.com/0.jpg",
+   "sha256": "3a8eef34e13bd84235fc57f7b0211b9655ac56a42de37d55d3fb9fe92d1b2d11",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.azbbqgrills.com",
+   "order": 1,
+   "file": "www.azbbqgrills.com/1.jpg",
+   "sha256": "e05337ca27dbd1d759882d055eb7926975e769319330f58c786bff54b6bf7704",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.realswroughtiron.com",
+   "order": 0,
+   "file": "www.realswroughtiron.com/0.jpg",
+   "sha256": "749149af03d7518cc79ac75788ce279c503545f9d5c9b444bfb5484ed12a1c94",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.realswroughtiron.com",
+   "order": 1,
+   "file": "www.realswroughtiron.com/1.jpg",
+   "sha256": "2fe2c55a7d0c488c3aa646e5e4952c5ba4ddf2b0733fa41dce94269386738d4b",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.rpc-rabrenco.com",
+   "order": 0,
+   "file": "www.rpc-rabrenco.com/0.jpg",
+   "sha256": "9f005492226ad0aa012b4784aaea34687055e070f4e6ea85923f4ca948015c98",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.rpc-rabrenco.com",
+   "order": 1,
+   "file": "www.rpc-rabrenco.com/1.jpg",
+   "sha256": "4e4cb3a85cd8d80b253bf0b0ec7981cd9d3c19f67ce70e5f1ad712c616673bb4",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.rpc-rabrenco.com",
+   "order": 2,
+   "file": "www.rpc-rabrenco.com/2.jpg",
+   "sha256": "070ad95825776fd0d92fe9b9ba5bc7274baa431bf4da7096ab0b4df10c064c84",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.polyprocessing.com",
+   "order": 0,
+   "file": "www.polyprocessing.com/0.jpg",
+   "sha256": "ad72b74571b40bb11d1d2a97670c8469a50b877f491563e068f4e46065736e16",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.polyprocessing.com",
+   "order": 1,
+   "file": "www.polyprocessing.com/1.jpg",
+   "sha256": "531a55e27443da685ebb8df213bf793bea50f242e9df2e4f1451fe54449af40e",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.polyprocessing.com",
+   "order": 2,
+   "file": "www.polyprocessing.com/2.jpg",
+   "sha256": "44128c65a6a192a5b55da20a68a189673725e2b29f20541b3d78eaef00915b77",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.nucoatinc.com",
+   "order": 0,
+   "file": "www.nucoatinc.com/0.jpg",
+   "sha256": "9c55da26697f796e832bd547c4aabb3016db614d2bc16aa00e74cff37b1f53a5",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.nucoatinc.com",
+   "order": 1,
+   "file": "www.nucoatinc.com/1.jpg",
+   "sha256": "6b9fa11f64329afc5121feb0beb13c4841207f7f10c240ebad5ff04f450a5603",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.nucoatinc.com",
+   "order": 2,
+   "file": "www.nucoatinc.com/2.jpg",
+   "sha256": "b13d56de826c81861a110f0512e17a978eb70d573a28283dbf8e50612425a95c",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.nolanandsonsnw.com",
+   "order": 0,
+   "file": "www.nolanandsonsnw.com/0.jpg",
+   "sha256": "ff89b5b66f6a30bfb1ce02883c84208b6896a87f9d8bb419c283ede537cb7524",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.catalystproductgroup.com",
+   "order": 0,
+   "file": "www.catalystproductgroup.com/0.jpg",
+   "sha256": "9d0974af5bb14cb309a0392bf5be9fce2285991b2193164dcd3bbdd1a4e6820b",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.catalystproductgroup.com",
+   "order": 1,
+   "file": "www.catalystproductgroup.com/1.jpg",
+   "sha256": "3e942d8db6964839621645bb27d2b6bff2eeb7a663c16db3eeb50467954329b7",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.catalystproductgroup.com",
+   "order": 2,
+   "file": "www.catalystproductgroup.com/2.jpg",
+   "sha256": "edaa3a4610cfe91d3b169df0659c7e5334966a9eb6921dbffc9a0f74f8c42678",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.hobsonmotzer.com",
+   "order": 0,
+   "file": "www.hobsonmotzer.com/0.jpg",
+   "sha256": "33350b1e6bd75a871e39bc969fd1ce2526caae1b3c585503a281f367edf01df3",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.behlencf.com",
+   "order": 0,
+   "file": "www.behlencf.com/0.jpg",
+   "sha256": "f39f236b48b049235d52b3005d8b292d78b30279059e867e45ef487c670899ee",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.behlencf.com",
+   "order": 1,
+   "file": "www.behlencf.com/1.jpg",
+   "sha256": "581ce2f83b3854f0ed663ce894cebc0a33292df82de1d024871dda0bf52dcaa7",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.behlencf.com",
+   "order": 2,
+   "file": "www.behlencf.com/2.jpg",
+   "sha256": "54df1e41133335a5e9f2b55512edc1ecf3bf91b902941b30323cfec998c2857f",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.daytool.com",
+   "order": 0,
+   "file": "www.daytool.com/0.jpg",
+   "sha256": "7186194e3201a175230610d4b9bf0fd5d22b0ada48cca2da67d349a215805875",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.daytool.com",
+   "order": 1,
+   "file": "www.daytool.com/1.jpg",
+   "sha256": "e10ca2c92fa285e5097186014c733e6e3c6a03ce54b6804fe126f488025c7ea7",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.daytool.com",
+   "order": 2,
+   "file": "www.daytool.com/2.jpg",
+   "sha256": "e2d915c0f1bc60f7c165e8c4e3e56359fb6f2530f860a9b41087c33d741db59d",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.chicagotube.com",
+   "order": 0,
+   "file": "www.chicagotube.com/0.jpg",
+   "sha256": "dd95a881f9c1683351d0a52b7bf9f92cffa8b2a6fdfa969c64633cf11269bade",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.chicagotube.com",
+   "order": 1,
+   "file": "www.chicagotube.com/1.jpg",
+   "sha256": "2aae290244c63d3372e5de5099171355a26109505ae6efd1d7a80c8ece11bbfa",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.chicagotube.com",
+   "order": 2,
+   "file": "www.chicagotube.com/2.jpg",
+   "sha256": "83c70ce3c945b69835b4416a6fe32c9f4ed18a875af4c0559fd06032d28f7cbc",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.fordatlantic.com",
+   "order": 0,
+   "file": "www.fordatlantic.com/0.jpg",
+   "sha256": "4c03a9ac4f516279ec8e868ced7e84d51fdb3585a4bc647f4d6161049542eb3f",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.fordatlantic.com",
+   "order": 1,
+   "file": "www.fordatlantic.com/1.jpg",
+   "sha256": "d31816cee2874188306a79c8985c52a8216c028879b5f57d35d12cbd34a51039",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.fordatlantic.com",
+   "order": 2,
+   "file": "www.fordatlantic.com/2.jpg",
+   "sha256": "d5234b890b16a74617486631593bf0b0f1e64045d470c4a1aff05917d79dd19a",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.rennerusa.com",
+   "order": 0,
+   "file": "www.rennerusa.com/0.jpg",
+   "sha256": "fea252c37f2e61b83f226fc89c69820743a80844e279bf3936bbf6abf99a5031",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.rennerusa.com",
+   "order": 1,
+   "file": "www.rennerusa.com/1.jpg",
+   "sha256": "e564bce68bc31952ff256d2511aa7b38f5372d5c2886d7a4f7dc5702376928bd",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.ampcotubes.com",
+   "order": 0,
+   "file": "www.ampcotubes.com/0.jpg",
+   "sha256": "55088a673bce9d5b5744de397a2b61f7eae56146f42cfb3001460cfd1779bd22",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.ampcotubes.com",
+   "order": 1,
+   "file": "www.ampcotubes.com/1.jpg",
+   "sha256": "36e314af41d9b5bfe64e0a0a7f3f71d3c8ac4b621091041a74a198020daa15d1",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.fernco.com",
+   "order": 0,
+   "file": "www.fernco.com/0.jpg",
+   "sha256": "57321868b5f1529440e440d696791f5d2635c00f9d757598f617a694fa50706e",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.fernco.com",
+   "order": 1,
+   "file": "www.fernco.com/1.jpg",
+   "sha256": "61e85d64be0e08baefb0bf73e461506072b3810fc4bba1edf9c0680f1302c45c",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.fernco.com",
+   "order": 2,
+   "file": "www.fernco.com/2.jpg",
+   "sha256": "22ba7aaf81df720fc70193ae781a351e50efbbd34bad2d94db2baa9d59aaf514",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.lhthomson.com",
+   "order": 0,
+   "file": "www.lhthomson.com/0.jpg",
+   "sha256": "3c77fdec5b1e21e692ae8f80cc6281620d2ed3525b4f95324af51cdc1a796e31",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.lhthomson.com",
+   "order": 1,
+   "file": "www.lhthomson.com/1.jpg",
+   "sha256": "418e41d29164b883560926bbe4e6118ed74adb5c09d07ff60748ef21804d3ade",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.lhthomson.com",
+   "order": 2,
+   "file": "www.lhthomson.com/2.jpg",
+   "sha256": "b5ab7ccc71be90d2bf811ec57daa269f46b86f582632feec26e43d9f4c4079e0",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.ejcon.com",
+   "order": 0,
+   "file": "www.ejcon.com/0.jpg",
+   "sha256": "2d7ca5aea8a9d55dcaf843e8209fc8dbd66754554477a95e76be919c1e0408a4",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.lmiaerospace.com",
+   "order": 0,
+   "file": "www.lmiaerospace.com/0.jpg",
+   "sha256": "06e00a193822e8d49140b3f298a0256cb2304213a4c27b85585b67d8a011bf0d",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.lmiaerospace.com",
+   "order": 1,
+   "file": "www.lmiaerospace.com/1.jpg",
+   "sha256": "7eba3a9cdb0e6551c76f5e26ec8d975c3cd87a7917a9f44f72ceeea5057280cb",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.automationguarding.com",
+   "order": 0,
+   "file": "www.automationguarding.com/0.jpg",
+   "sha256": "110119844c70e95d99ff97ee95f2e3db4e26edeb45d413dc3e9ba815fe854621",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.automationguarding.com",
+   "order": 1,
+   "file": "www.automationguarding.com/1.jpg",
+   "sha256": "3004b8dd0c9d8c6e6bc103b735b77ecc33677a3f83739b00e737f7feb9537148",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.automationguarding.com",
+   "order": 2,
+   "file": "www.automationguarding.com/2.jpg",
+   "sha256": "61e1d74874aab54850681e4f04d0b48bc6c03915498c884b6c3c524a591d022e",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.freudenbergmedical.com",
+   "order": 0,
+   "file": "www.freudenbergmedical.com/0.jpg",
+   "sha256": "fc0e6cb3cacbe754b516fb54c18faa310115f14104498bb3c524258598151822",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.freudenbergmedical.com",
+   "order": 1,
+   "file": "www.freudenbergmedical.com/1.jpg",
+   "sha256": "352e405c77085776765b64ebb141ad9108768b8c4c4505bd368ea9c059865f11",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.freudenbergmedical.com",
+   "order": 2,
+   "file": "www.freudenbergmedical.com/2.jpg",
+   "sha256": "f65059ad3fd34ab33e67910d2fccaceaed0501d11aaf2b43c7f4e5317c59b713",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.aggressivetube.com",
+   "order": 0,
+   "file": "www.aggressivetube.com/0.jpg",
+   "sha256": "3c19d44ef96e05ec017fd853d5bc8d151f4314979e6495eae381a3bfe28a48e4",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.aggressivetube.com",
+   "order": 1,
+   "file": "www.aggressivetube.com/1.jpg",
+   "sha256": "96f9e20da6b26fd481874e2e1d1715e6593300531242251d7e8bf51fa55fe05f",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.aggressivetube.com",
+   "order": 2,
+   "file": "www.aggressivetube.com/2.jpg",
+   "sha256": "ac3bd4b8717d10631a923038cc3c4c8902f3d10964412c00f7138217899ee1f6",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.dipseal.com",
+   "order": 0,
+   "file": "www.dipseal.com/0.jpg",
+   "sha256": "afe96e380e6b76d61bbd3d56771760c20b9aa048bd49551a5b465e1af38952e0",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.omnimax.com",
+   "order": 0,
+   "file": "www.omnimax.com/0.jpg",
+   "sha256": "1e8f2ff230cb0c9921cf85d2c7779cfe1fa786db2ae7f116f618e484dfaa9022",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.drilling.com",
+   "order": 0,
+   "file": "www.drilling.com/0.jpg",
+   "sha256": "4800e1fbb9409f83dc52647884ab8eb963ed0cce5bf71ee20ca5d983242a35b9",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.drilling.com",
+   "order": 1,
+   "file": "www.drilling.com/1.jpg",
+   "sha256": "fc881d91b93f16f8d19700ac3570b3c7a05d85a796ae5bcd882785713d9cbcd5",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.davismfg.com",
+   "order": 0,
+   "file": "www.davismfg.com/0.jpg",
+   "sha256": "94f600963d90f7933b5e8a130e0a137a3d743635705dd6192018672398f7a241",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.davismfg.com",
+   "order": 1,
+   "file": "www.davismfg.com/1.jpg",
+   "sha256": "5d654bf600f5336d71b4382641fd1ff7acc18a58ebf6b9dda36129c4e4535ee8",
+   "status": "ok"
+  },
+  {
+   "manufacturer": "www.davismfg.com",
+   "order": 2,
+   "file": "www.davismfg.com/2.jpg",
+   "sha256": "00d505a1ed62fae4f7adb54a007110cb50519261a8d625ccaf995cf95acf3836",
+   "status": "ok"
+  }
+ ]
+}

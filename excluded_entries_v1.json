@@ -1,0 +1,50 @@
+{
+  "revision": "v1",
+  "date": "2026-10-12",
+  "status": "FLAGGED, NOT YET APPLIED to the currently-released hetero_graphs/Graph_A.pt or any downstream split/edge/feature file. Scheduled to be applied at the next full graph rebuild (bundled with the pending Graph_B-F Web-ID migration), not as a standalone patch, to avoid desynchronizing frozen_split_GraphA_seed42.pt, material_edges.pt, manufacturer_coverage_flags.pt, and the round-1 SAGE checkpoint, all of which assume the current node/edge indexing.",
+  "found_by": "audit_edge_fidelity.py, full-population screen for directory rows on free community/personal hosting platforms (2026-10-12)",
+  "excluded_manufacturers": [
+    {
+      "web_id": "www.krffinancialllc.weebly.com",
+      "name": "krffinancialllc.weebly",
+      "reason": "Confirmed non-manufacturer: a mortgage/loan company. Listed 'products' are loan types (Conventional Loans, Jumbo Loans, Reverse Mortgages, FHA Loans, VA Loans). Directory mis-assigned NAICS 'Steel Investment Foundries'.",
+      "action": "exclude node and all its edges entirely"
+    },
+    {
+      "web_id": "www.meridianmanor.blogspot.com",
+      "name": "meridianmanor.blogspot",
+      "reason": "Confirmed non-manufacturer: a residential community. Listed 'products' are services (Homes, Real Estate, Construction Services, Air Conditioning & Heating Services, Carpet & Tile Cleaning Services). Directory mis-assigned NAICS 'Manufactured Home (Mobile Home) Manufacturing'.",
+      "action": "exclude node and all its edges entirely"
+    },
+    {
+      "web_id": "apaa.wildapricot.org",
+      "name": "apaa.wildapricot.org",
+      "reason": "Confirmed non-manufacturer: the Arizona Pastel Artists' Association (a hobbyist arts association, not a business). Listed 'products' are association activities (Pastel Paintings, Membership Booklet, Awards, Workshops, DVDs). Directory mis-assigned NAICS 'Office Supplies (except Paper) Manufacturing'. Also contributes personal member-submitted photos (not product/facility images) to the image corpus under this label, and a 'Lead' Material_Capability value used by the material-relation-recovery task's vocabulary.",
+      "action": "exclude node and all its edges entirely"
+    }
+  ],
+  "excluded_edges": [
+    {
+      "manufacturer_web_id": "www.brimleyskateboards.tumblr.com",
+      "manufacturer_name": "brimleyskateboards.tumblr",
+      "product_string": "Skate Videos",
+      "reason": "Tumblr blog-tag category, not a real product -- platform-specific extraction artifact. The manufacturer itself is plausibly a genuine small skateboard maker (kept as a node); only this edge is removed.",
+      "action": "exclude this specific edge only"
+    },
+    {
+      "manufacturer_web_id": "www.brimleyskateboards.tumblr.com",
+      "manufacturer_name": "brimleyskateboards.tumblr",
+      "product_string": "Skate Team",
+      "reason": "Tumblr blog-tag category (team roster page), not a real product.",
+      "action": "exclude this specific edge only"
+    },
+    {
+      "manufacturer_web_id": "www.brimleyskateboards.tumblr.com",
+      "manufacturer_name": "brimleyskateboards.tumblr",
+      "product_string": "Skate Footage",
+      "reason": "Tumblr blog-tag category (video footage page), not a real product.",
+      "action": "exclude this specific edge only"
+    }
+  ],
+  "disclosure_note": "The graph and all benchmark numbers currently reported in ARCHIVE_round1 through ARCHIVE_round5 and USAGE_EVIDENCE_ONEPAGE.md include these 3 non-manufacturer nodes and 3 contaminated edges. Scale: 3/8,900 manufacturer nodes (0.034%), 3/112,598 manufacturer-product edges (0.003%) -- both far below any reported effect size in this project, so no existing result is being retracted or rerun over this. This is disclosed explicitly rather than silently left in a 'clean' release; the exclusion will be applied mechanically from this file at the next full graph rebuild."
+}
