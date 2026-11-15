@@ -1,5 +1,8 @@
 # PMGraph — Dataset Card
 
+**Authors**: Yunqing Li and Zixiang Tang (co-first authors), Lenovo ·
+**Contact**: yli59@lenovo.com · **License**: CC BY 4.0
+
 **Data**: https://huggingface.co/datasets/shawntzx/PMGraph (revision `v2`) · **Code**: https://github.com/llmresearchbase/PMGraph
 
 ## Summary

@@ -25,6 +25,8 @@ Usage:
   python publish_to_huggingface.py --repo-id shawntzx/PMGraph --execute
 """
 import argparse
+import csv
+import json
 import os
 import sys
 
@@ -71,6 +73,12 @@ def build_dataset_card():
     the v2 notice from hf_card_header.md, followed by DATA_CARD.md."""
     header = open("hf_card_header.md", encoding="utf-8").read()
     _, front, notice = header.split("---\n", 2)
+    # Declare every CSV column as string: the viewer otherwise infers types from the
+    # first rows (e.g. Business_Description is empty there) and fails on later rows.
+    with open("Cleaned_Master_CSV_v3.csv", encoding="utf-8-sig", newline="") as f:
+        columns = next(csv.reader(f))
+    front += "dataset_info:\n- config_name: directory\n  features:\n"
+    front += "".join(f"  - name: {json.dumps(c)}\n    dtype: string\n" for c in columns)
     card = open("DATA_CARD.md", encoding="utf-8").read()
     assert "\n## Summary" in card, "DATA_CARD.md layout changed; update build_dataset_card()"
     card = card.replace("\n## Summary", "\n" + notice.strip() + "\n\n## Summary", 1)
