@@ -7,15 +7,12 @@ step.
 What --execute does, in order:
   1. Refuses to run if placeholder markers remain in the docs (see
      PLACEHOLDER_MARKERS), unless --force is passed.
-  2. If the target repo already has content and no `--v1-tag` tag, tags the
-     current main commit with it, so the prior release stays downloadable at
-     that revision.
-  3. Makes ONE commit to main that adds the v2 files and deletes every
+  2. Makes ONE commit to main that adds the v2 files and deletes every
      other file left over from the prior release (except .gitattributes).
      The dataset card (HF's README.md) is built from hf_card_header.md +
      DATA_CARD.md; this package's reproduction README is uploaded as
      REPRODUCE.md.
-  4. Tags that commit with `--tag` (default v2).
+  3. Tags that commit with `--tag` (default v2).
 
 Authentication: an HF token with write access, via HF_TOKEN or a prior
 `hf auth login`. Never hardcode a token in this file.
@@ -92,7 +89,6 @@ def main():
     ap.add_argument("--force", action="store_true", help="publish even if placeholder markers remain (not recommended)")
     ap.add_argument("--private", action="store_true", help="create the repo as private if it does not exist yet")
     ap.add_argument("--tag", default="v2", help="tag for the new release commit")
-    ap.add_argument("--v1-tag", default="v1", help="tag that preserves the prior release before it is replaced")
     args = ap.parse_args()
 
     from huggingface_hub import HfApi, CommitOperationAdd, CommitOperationDelete
@@ -114,13 +110,9 @@ def main():
 
     new_paths = {"README.md"} | set(DOC_PATHS.values()) | set(DATA_PATHS)
     to_delete = sorted(f for f in remote_files if f not in new_paths and f != ".gitattributes")
-    has_prior_release = any(f != ".gitattributes" for f in remote_files)
-    tag_prior = has_prior_release and args.v1_tag not in tags
 
     print(f"Target repo: {args.repo_id}  ({'exists' if remote_files else 'will be created'})")
     print(f"Existing tags: {sorted(tags) or 'none'}")
-    if tag_prior:
-        print(f"Will tag current main as '{args.v1_tag}' before replacing it.")
     print("Will upload:")
     print("  README.md  (dataset card, built from hf_card_header.md + DATA_CARD.md)")
     for local, remote in DOC_PATHS.items():
@@ -139,10 +131,6 @@ def main():
         return
 
     api.create_repo(repo_id=args.repo_id, repo_type="dataset", private=args.private, exist_ok=True)
-    if tag_prior:
-        api.create_tag(args.repo_id, tag=args.v1_tag, repo_type="dataset",
-                       tag_message="Original C-MAG-era release, preserved before PMGraph v2")
-        print(f"tagged prior release as {args.v1_tag}")
 
     ops = [CommitOperationAdd(path_in_repo="README.md", path_or_fileobj=card)]
     ops += [CommitOperationAdd(path_in_repo=remote, path_or_fileobj=local) for local, remote in DOC_PATHS.items()]

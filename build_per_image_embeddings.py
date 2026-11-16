@@ -21,24 +21,23 @@ Output: manufacturer_per_image_embeddings.pt
   { "vocab": [str], "embeddings": np.ndarray[56, 768] }
 """
 import io
+import os
 import re
 import yaml
 import numpy as np
 import torch
 from PIL import Image
-from huggingface_hub import hf_hub_download
 import pyarrow.parquet as pq
 from transformers import AutoModel
 
-# Raw images exist only in the original (v1) HuggingFace release, pinned here.
-V1_REVISION = "v1"
-PARQUET_PATH = hf_hub_download(repo_id="shawntzx/PMGraph", filename="data/train-00000-of-00001.parquet",
-                               repo_type="dataset", revision=V1_REVISION)
+# Raw images are not redistributed (see PROVENANCE_AND_ETHICS.md), so this script needs a
+# local copy of the original v1 release; set PMGRAPH_V1_DIR to its location.
+V1_DIR = os.environ.get("PMGRAPH_V1_DIR", "PMGraph-v1")
+PARQUET_PATH = os.path.join(V1_DIR, "data", "train-00000-of-00001.parquet")
 
 
 def load_idx2name():
-    readme_path = hf_hub_download(repo_id="shawntzx/PMGraph", filename="README.md", repo_type="dataset",
-                                  revision=V1_REVISION)
+    readme_path = os.path.join(V1_DIR, "README.md")
     with open(readme_path, encoding="utf-8", errors="replace") as f:
         text = f.read()
     m = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)

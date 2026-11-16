@@ -21,9 +21,9 @@ configs:
 
 > **This is PMGraph v2** (corrected and audited). Code and reproduction
 > steps: https://github.com/llmresearchbase/PMGraph (see `REPRODUCE.md` here for
-> the same instructions). The original C-MAG-era release is preserved at
-> revision [`v1`](https://huggingface.co/datasets/shawntzx/PMGraph/tree/v1);
-> `CHANGELOG.md` lists what changed.
+> the same instructions). It replaces the original C-MAG-era release, which
+> included raw website images and has been withdrawn; `CHANGELOG.md` lists
+> what changed.
 
 ## Files
 

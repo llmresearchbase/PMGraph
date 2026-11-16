@@ -7,22 +7,22 @@ uses real VAL manufacturers' own images, not a stand-in borrowed from TEST.
 """
 import hashlib
 import io
+import os
 import json
 import random
 import re
 
 import pyarrow.parquet as pq
 import yaml
-from huggingface_hub import hf_hub_download
 from PIL import Image
 
 SEED = 999
 N_SAMPLE = 25
 MAX_IMAGES_PER_MANU = 3
-# Raw images exist only in the original (v1) HuggingFace release, pinned here.
-V1_REVISION = "v1"
-PARQUET_PATH = hf_hub_download(repo_id="shawntzx/PMGraph", filename="data/train-00000-of-00001.parquet",
-                               repo_type="dataset", revision=V1_REVISION)
+# Raw images are not redistributed (see PROVENANCE_AND_ETHICS.md), so this script needs a
+# local copy of the original v1 release; set PMGRAPH_V1_DIR to its location.
+V1_DIR = os.environ.get("PMGRAPH_V1_DIR", "PMGraph-v1")
+PARQUET_PATH = os.path.join(V1_DIR, "data", "train-00000-of-00001.parquet")
 OUT_DIR = "vlm_experiment/images_val_dryrun"
 
 
@@ -54,8 +54,7 @@ def main():
     target_manus = rng.sample(val_has_image, min(N_SAMPLE, len(val_has_image)))
     print(f"sampled {len(target_manus)} for the val dry-run")
 
-    readme_path = hf_hub_download(repo_id="shawntzx/PMGraph", filename="README.md", repo_type="dataset",
-                                  revision=V1_REVISION)
+    readme_path = os.path.join(V1_DIR, "README.md")
     text = open(readme_path, encoding="utf-8", errors="replace").read()
     m = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)
     frontmatter = yaml.safe_load(m.group(1))

@@ -38,4 +38,6 @@
   yli59@lenovo.com.
 - **Where each version lives**: v2 data is at https://huggingface.co/datasets/shawntzx/PMGraph
   (git tag `v2`), v2 code at https://github.com/llmresearchbase/PMGraph (tag `v2.0`). The original
-  C-MAG-era release remains available at the HuggingFace tag `v1`.
+  C-MAG-era release, which included raw website images, was withdrawn from
+  HuggingFace on 2026-11-15 (repository history removed) to match this
+  release's no-pixel image policy; see `PROVENANCE_AND_ETHICS.md`.
